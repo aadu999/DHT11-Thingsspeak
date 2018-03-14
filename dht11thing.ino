@@ -31,7 +31,7 @@ void loop() {
    if((WiFiMulti.run() == WL_CONNECTED)) {
 
         HTTPClient http;
-        http.begin("http://api.thingspeak.com/update?api_key=JLAESJCD7EEFXMYZ&field1="+String(temperature)+"&field2="+String(humidity));
+        http.begin("http://api.thingspeak.com/update?api_key=APIKEY&field1="+String(temperature)+"&field2="+String(humidity));
         if(http.GET()==HTTP_CODE_OK)
         {
           Serial.println("Data Send");
