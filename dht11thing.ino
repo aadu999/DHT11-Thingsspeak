@@ -4,7 +4,7 @@
 #include <ESP8266WiFiMulti.h>
 #include <ESP8266HTTPClient.h>
 
-#define DHTPIN 2 
+#define DHTPIN D2 
 #define DHTTYPE DHT11  
 DHT dht(DHTPIN, DHTTYPE);  
 float temperature, humidity; 
